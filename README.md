@@ -5,6 +5,9 @@ Por el momento solo registro y login.
 
 La bd, como es sqlite, es un archivo local.
 
+Para levantarlo tiren "python -m uvicorn main:app --reload"
+Acuerdense de instalar todas las librerias del requirements.txt
+
 http://localhost:8000/auth/register
 body:
 {
