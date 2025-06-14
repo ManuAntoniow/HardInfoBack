@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from models.user import User
-from models.product import FavoriteProduct
+from models.productFav import FavoriteProduct
 from database import get_db
 from pydantic import BaseModel
 from routers.auth import get_current_user
