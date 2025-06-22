@@ -2,10 +2,11 @@ from sqlalchemy import Boolean, Column, Integer, String, Float,ForeignKey
 from sqlalchemy.orm import relationship
 from database import Base
 
+
 class Propiedad_motherboard(Base):
     __tablename__ = "propiedad_motherboard"
 
-    id_propertie = Column(Integer, primary_key=True, index=True)
+    id_property = Column(Integer, primary_key=True, index=True)
     id_producto = Column(Integer, ForeignKey("producto.id_producto"))
     chipset = Column(String(50))
     socket = Column(String(20))

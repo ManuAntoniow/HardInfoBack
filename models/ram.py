@@ -2,10 +2,11 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Float
 from sqlalchemy.orm import relationship
 from database import Base
 
+
 class Propiedad_ram(Base):
     __tablename__ = "propiedad_ram"
 
-    id_propertie = Column(Integer, primary_key=True, index=True)
+    id_property = Column(Integer, primary_key=True, index=True)
     id_producto = Column(Integer, ForeignKey("producto.id_producto"))
     type = Column(String(20))     # DDR4, DDR5, etc.
     size = Column(String(20))     # 8GB, 16GB, 32GB

@@ -1,6 +1,10 @@
 from sqlalchemy import Column, Integer, String, Numeric
 from sqlalchemy.orm import relationship
 from database import Base
+from models.ram import Propiedad_ram
+from models.gpu import Propiedad_gpu
+from models.cpu import Propiedad_cpu
+from models.mother import Propiedad_motherboard
 
 class Producto(Base):
     __tablename__ = "producto"
@@ -12,7 +16,7 @@ class Producto(Base):
     brand = Column(String(50))
     desc = Column(String(500))
 
-    propiedad_ram = relationship("Propiedad_ram", back_populates="producto")
-    propiedad_cpu = relationship("Propiedad_cpu", back_populates="producto")
-    propiedad_gpu = relationship("Propiedad_gpu", back_populates="producto")
-    propiedad_motherboard = relationship("Propiedad_motherboard", back_populates="producto")
+    propiedad_ram = relationship("Propiedad_ram", back_populates="producto", uselist=False)
+    propiedad_cpu = relationship("Propiedad_cpu", back_populates="producto", uselist=False)
+    propiedad_gpu = relationship("Propiedad_gpu", back_populates="producto", uselist=False)
+    propiedad_motherboard = relationship("Propiedad_motherboard", back_populates="producto", uselist=False)
