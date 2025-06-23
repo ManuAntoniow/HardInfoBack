@@ -15,6 +15,7 @@ class Producto(Base):
     price = Column(Numeric(10, 2))
     brand = Column(String(50))
     desc = Column(String(500))
+    image = Column(String(500))  # URL de la imagen
 
     propiedad_ram = relationship("Propiedad_ram", back_populates="producto", uselist=False)
     propiedad_cpu = relationship("Propiedad_cpu", back_populates="producto", uselist=False)

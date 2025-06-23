@@ -95,6 +95,7 @@ class ProductoOut(BaseModel):
     price: float
     brand: str
     desc: Optional[str]
+    image: Optional[str]
 
     propiedad_cpu: Optional[PropiedadCPUOut]
     propiedad_gpu: Optional[PropiedadGPUOut]

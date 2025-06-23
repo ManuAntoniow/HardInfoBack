@@ -48,104 +48,116 @@ def create_database():
     productos_data = [
         {
             "id_producto": 1,
-            "nombre": "Intel Core i9-13900K",
-            "tipo": "CPU",
-            "precio": 589.99,
-            "descripcion": "16 núcleos/24 hilos, hasta 5.8GHz, socket LGA1700",
-            "marca": "Intel"
+            "name": "Intel Core i9-13900K",
+            "type": "CPU",
+            "price": 589.99,
+            "desc": "16 núcleos/24 hilos, hasta 5.8GHz, socket LGA1700",
+            "brand": "Intel",
+            "image": "https://mla-s1-p.mlstatic.com/851671-MLA52221724022_102022-F.jpg"
         },
         {
             "id_producto": 2,
-            "nombre": "AMD Ryzen 9 7950X",
-            "tipo": "CPU",
-            "precio": 699.99,
-            "descripcion": "16 núcleos/32 hilos, hasta 5.7GHz, socket AM5",
-            "marca": "Amd"
+            "name": "AMD Ryzen 9 7950X",
+            "type": "CPU",
+            "price": 699.99,
+            "desc": "16 núcleos/32 hilos, hasta 5.7GHz, socket AM5",
+            "brand": "Amd",
+            "image": "https://fullh4rd.com.ar/img/productos/1/micro-amd-ryzen-9-7950x-cvideo-scooler-am5-0.jpg"
         },
         {
             "id_producto": 7,
-            "nombre": "Intel Core i7-13700K",
-            "tipo": "CPU",
-            "precio": 409.99,
-            "descripcion": "16 núcleos/24 hilos, hasta 5.4GHz, socket LGA1700",
-            "marca": "Intel"
+            "name": "Intel Core i7-13700K",
+            "type": "CPU",
+            "price": 409.99,
+            "desc": "16 núcleos/24 hilos, hasta 5.4GHz, socket LGA1700",
+            "brand": "Intel",
+            "image": "https://fullh4rd.com.ar/img/productos/1/micro-intel-core-i713700k-scooler-s1700-box-0.jpg"
         },
 
         # RAMs
         {
             "id_producto": 3,
-            "nombre": "Corsair Vengeance RGB 32GB",
-            "tipo": "RAM",
-            "precio": 129.99,
-            "descripcion": "DDR5 5600MHz, CL36, 2x16GB",
-            "marca": "Corsair"
+            "name": "Corsair Vengeance RGB 32GB",
+            "type": "RAM",
+            "price": 129.99,
+            "desc": "DDR5 5600MHz, CL36, 2x16GB",
+            "brand": "Corsair",
+            "image": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Memory/vengeance-rgb-ddr5-blk-config/Gallery/Vengeance-RGB-DDR5-2UP-BLACK_01.webp"
         },
         {
             "id_producto": 4,
-            "nombre": "G.Skill Trident Z5 64GB",
-            "tipo": "RAM",
-            "precio": 249.99,
-            "descripcion": "DDR5 6000MHz, CL30, 2x32GB",
-            "marca": "G.Skill"
+            "name": "G.Skill Trident Z5 64GB",
+            "type": "RAM",
+            "price": 249.99,
+            "desc": "DDR5 6000MHz, CL30, 2x32GB",
+            "brand": "G.Skill",
+            "image": "https://http2.mlstatic.com/D_NQ_NP_747001-MLA54513138411_032023-O.webp"
         },
         {
             "id_producto": 8,
-            "nombre": "Kingston Fury Beast 16GB",
-            "tipo": "RAM",
-            "precio": 74.99,
-            "descripcion": "DDR5 5200MHz, CL40, 2x8GB",
-            "marca": "Kingston"
+            "name": "Kingston Fury Beast 16GB",
+            "type": "RAM",
+            "price": 74.99,
+            "desc": "DDR5 5200MHz, CL40, 2x8GB",
+            "brand": "Kingston",
+            "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=300&fit=crop"
         },
 
         # GPUs
         {
             "id_producto": 5,
-            "nombre": "NVIDIA RTX 4090 Founders Edition",
-            "tipo": "GPU",
-            "precio": 1599.99,
-            "descripcion": "24GB GDDR6X, 16384 CUDA cores",
-            "marca": "Nvidia"
+            "name": "NVIDIA RTX 4090 Founders Edition",
+            "type": "GPU",
+            "price": 1599.99,
+            "desc": "24GB GDDR6X, 16384 CUDA cores",
+            "brand": "Nvidia",
+            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
         },
         {
             "id_producto": 6,
-            "nombre": "AMD Radeon RX 7900 XTX",
-            "tipo": "GPU",
-            "precio": 999.99,
-            "descripcion": "24GB GDDR6, 6144 stream processors",
-            "marca": "Amd"
+            "name": "AMD Radeon RX 7900 XTX",
+            "type": "GPU",
+            "price": 999.99,
+            "desc": "24GB GDDR6, 6144 stream processors",
+            "brand": "Amd",
+            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
         },
         {
             "id_producto": 9,
-            "nombre": "NVIDIA RTX 4070 Ti Super",
-            "tipo": "GPU",
-            "precio": 799.99,
-            "descripcion": "16GB GDDR6X, 8448 CUDA cores",
-            "marca": "Nvidia"
+            "name": "NVIDIA RTX 4070 Ti Super",
+            "type": "GPU",
+            "price": 799.99,
+            "desc": "16GB GDDR6X, 8448 CUDA cores",
+            "brand": "Nvidia",
+            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
         },
         #Motherboards
         {
             "id_producto": 10,
-            "nombre": "ASUS ROG Maximus Z790 Hero",
-            "tipo": "Motherboard",
-            "precio": 599.99,
-            "descripcion": "Z790, LGA1700, DDR5, Wi-Fi 6E, PCIe 5.0, ATX",
-            "marca": "Asus"
+            "name": "ASUS ROG Maximus Z790 Hero",
+            "type": "Motherboard",
+            "price": 599.99,
+            "desc": "Z790, LGA1700, DDR5, Wi-Fi 6E, PCIe 5.0, ATX",
+            "brand": "Asus",
+            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
         },
         {
             "id_producto": 11,
-            "nombre": "MSI MPG B650 Carbon WiFi",
-            "tipo": "Motherboard",
-            "precio": 249.99,
-            "descripcion": "B650, AM5, DDR5, Wi-Fi 6E, PCIe 4.0, ATX",
-            "marca": "MSI"
+            "name": "MSI MPG B650 Carbon WiFi",
+            "type": "Motherboard",
+            "price": 249.99,
+            "desc": "B650, AM5, DDR5, Wi-Fi 6E, PCIe 4.0, ATX",
+            "brand": "MSI",
+            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
         },
         {
             "id_producto": 12,
-            "nombre": "Gigabyte X670E AORUS Master",
-            "tipo": "Motherboard",
-            "precio": 449.99,
-            "descripcion": "X670E, AM5, DDR5, PCIe 5.0, Wi-Fi 6E, ATX",
-            "marca": "Gigabyte"
+            "name": "Gigabyte X670E AORUS Master",
+            "type": "Motherboard",
+            "price": 449.99,
+            "desc": "X670E, AM5, DDR5, PCIe 5.0, Wi-Fi 6E, ATX",
+            "brand": "Gigabyte",
+            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
         }
     ]
     propiedades_cpu_data = [
@@ -337,15 +349,16 @@ def create_database():
 
     for product_data in productos_data:
         existing_product = db.query(Producto).filter(
-            ((Producto.name) == product_data["nombre"])
+            ((Producto.name) == product_data["name"])
         ).first()
         if not existing_product:
             db_product = Producto(
-                name=product_data["nombre"],
-                type=product_data["tipo"],
-                price=product_data["precio"],
-                brand=product_data["marca"],
-                desc=product_data["descripcion"]
+                name=product_data["name"],
+                type=product_data["type"],
+                price=product_data["price"],
+                brand=product_data["brand"],
+                desc=product_data["desc"],
+                image=product_data["image"]
             )
             db.add(db_product)
 
