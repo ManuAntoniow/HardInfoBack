@@ -36,6 +36,16 @@ class UserCreate(BaseModel):
     email: str
     password: str
 
+class UserResponse(BaseModel):
+    id: int
+    nombre: str
+    apellido: str
+    usuario: str
+    email: str
+
+    class Config:
+        from_attributes = True
+
 def verify_password(plain_password, hashed_password):
     return pwd_context.verify(plain_password, hashed_password)
 
@@ -132,3 +142,7 @@ def login_for_access_token(
         data={"sub": user.email}, expires_delta=access_token_expires
     )
     return {"access_token": access_token, "token_type": "bearer"}
+
+@router.get("/me", response_model=UserResponse)
+async def get_current_user_info(current_user: User = Depends(get_current_user)):
+    return current_user
