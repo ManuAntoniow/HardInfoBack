@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Numeric
+from sqlalchemy import Column, Integer, String, Numeric, Float
 from sqlalchemy.orm import relationship
 from database import Base
 from models.ram import Propiedad_ram
@@ -16,6 +16,8 @@ class Producto(Base):
     brand = Column(String(50))
     desc = Column(String(500))
     image = Column(String(500))  # URL de la imagen
+    total_rating = Column(Float, default=0.0)  # Promedio de ratings
+    rating_count = Column(Integer, default=0)   # Número total de ratings
 
     propiedad_ram = relationship("Propiedad_ram", back_populates="producto", uselist=False)
     propiedad_cpu = relationship("Propiedad_cpu", back_populates="producto", uselist=False)

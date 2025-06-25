@@ -6,6 +6,7 @@ from models.gpu import Propiedad_gpu
 from models.cpu import Propiedad_cpu
 from models.mother import Propiedad_motherboard
 from models.ram import Propiedad_ram
+from models.userRating import UserRating
 from database import Base, get_db
 from passlib.context import CryptContext
 import os
@@ -14,7 +15,7 @@ import os
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 def create_database():
-    SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
+    SQLALCHEMY_DATABASE_URL = "sqlite:///./hardware.db"
     engine = create_engine(
         SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
     )
@@ -358,7 +359,9 @@ def create_database():
                 price=product_data["price"],
                 brand=product_data["brand"],
                 desc=product_data["desc"],
-                image=product_data["image"]
+                image=product_data["image"],
+                total_rating=0.0,
+                rating_count=0
             )
             db.add(db_product)
 
