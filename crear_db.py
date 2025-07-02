@@ -101,7 +101,7 @@ def create_database():
             "price": 74.99,
             "desc": "DDR5 5200MHz, CL40, 2x8GB",
             "brand": "Kingston",
-            "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=300&fit=crop"
+            "image": "https://http2.mlstatic.com/D_NQ_NP_626684-MLU75575120358_042024-O.webp"
         },
 
         # GPUs
@@ -112,7 +112,7 @@ def create_database():
             "price": 1599.99,
             "desc": "24GB GDDR6X, 16384 CUDA cores",
             "brand": "Nvidia",
-            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
+            "image": "https://dcdn-us.mitiendanube.com/stores/003/017/462/products/rtx-4090-fe-21-145be42c513ca3f55716809030777284-1024-1024.jpg"
         },
         {
             "id_producto": 6,
@@ -120,8 +120,8 @@ def create_database():
             "type": "GPU",
             "price": 999.99,
             "desc": "24GB GDDR6, 6144 stream processors",
-            "brand": "Amd",
-            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
+            "brand": "GIGABYTE",
+            "image": "https://fullh4rd.com.ar/img/productos/3/video-radeon-rx-7900-xtx-24gb-gigabyte-gaming-oc-0.jpg"
         },
         {
             "id_producto": 9,
@@ -129,8 +129,8 @@ def create_database():
             "type": "GPU",
             "price": 799.99,
             "desc": "16GB GDDR6X, 8448 CUDA cores",
-            "brand": "Nvidia",
-            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
+            "brand": "GIGABYTE",
+            "image": "https://katech.com.ar/wp-content/uploads/x1-1147.jpg"
         },
         #Motherboards
         {
@@ -140,7 +140,7 @@ def create_database():
             "price": 599.99,
             "desc": "Z790, LGA1700, DDR5, Wi-Fi 6E, PCIe 5.0, ATX",
             "brand": "Asus",
-            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
+            "image": "https://spacegamer.com.ar/img/Public/1058/47270-producto-1.jpg"
         },
         {
             "id_producto": 11,
@@ -149,7 +149,7 @@ def create_database():
             "price": 249.99,
             "desc": "B650, AM5, DDR5, Wi-Fi 6E, PCIe 4.0, ATX",
             "brand": "MSI",
-            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
+            "image": "https://storage-asset.msi.com/global/picture/image/feature/mb/B650/MPG-B650-CARBON-WIFI/mpg-b650-carbon-wifi.png"
         },
         {
             "id_producto": 12,
@@ -158,7 +158,7 @@ def create_database():
             "price": 449.99,
             "desc": "X670E, AM5, DDR5, PCIe 5.0, Wi-Fi 6E, ATX",
             "brand": "Gigabyte",
-            "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?w=400&h=300&fit=crop"
+            "image": "https://static.gigabyte.com/StaticFile/Image/Global/ae286d69880d94b705839bd5b735f216/Product/31789/Png"
         }
     ]
     propiedades_cpu_data = [
